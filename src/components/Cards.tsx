@@ -1,4 +1,4 @@
-import { Card } from "../App"
+import { Card } from "../pages/GamePage"
 import cover from '../assets/img/cover.webp'
 import "../assets/styles/singelCard.scss"
 
