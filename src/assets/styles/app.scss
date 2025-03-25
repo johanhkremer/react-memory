@@ -36,9 +36,8 @@ button {
         grid-gap: 10px;
     }
 
-    /* För mobiler vill vi visa 3 kolumner så att alla korten syns */
     @media (max-width: 480px) {
         grid-template-columns: repeat(3, 1fr);
-        grid-gap: 5px;
+        grid-gap: 20px;
     }
 }
