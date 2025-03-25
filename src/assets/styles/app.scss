@@ -1,6 +1,7 @@
 .app {
     max-width: 860px;
     margin: 40px auto;
+    padding: 0 20px;
 }
 
 button {
@@ -17,7 +18,6 @@ button {
         background-color: #c23866;
         color: #fff;
     }
-
 }
 
 .card-grid {
@@ -26,11 +26,19 @@ button {
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 20px;
     justify-items: center;
-    grid-auto-rows: auto;
-}
 
-.card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    @media (max-width: 1024px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media (max-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+    }
+
+    /* För mobiler vill vi visa 3 kolumner så att alla korten syns */
+    @media (max-width: 480px) {
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 5px;
+    }
 }
